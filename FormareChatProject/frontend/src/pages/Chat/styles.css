@@ -1,0 +1,134 @@
+.chat-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .chat-container aside,
+  .chat-container section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 550px;
+    height: 100%;
+  }
+  
+  .chat-container aside {
+    max-width: 200px;
+    width: 100%;
+    margin-right: 30px;
+  }
+  
+  .chat-container aside p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .chat-container aside ul li strong {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .chat-container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .chat-container section .messages {
+    flex: 1;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  
+  .chat-container section .messages::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chat-container section .messages::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  
+  .chat-container section .messages::-webkit-scrollbar-thumb {
+    background: #999;
+  }
+  
+  .chat-container section .messages ul li {
+    background: #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 12px;
+  }
+  
+  .chat-container section .messages ul li .message-header {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 8px;
+  }
+  
+  .chat-container section .messages ul li .message-header strong {
+    font-size: 13px;
+    color: #333;
+  }
+  
+  .chat-container section .messages ul li .message-content {
+    font-size: 14px;
+    color: #444;
+    line-height: 16px;
+  }
+  
+  .chat-container section .messages ul li.logged {
+    background: #3f94f5;
+    margin-left: 20%;
+  }
+  
+  .chat-container section .messages ul li.logged .message-header {
+    color: #ccc;
+  }
+  
+  .chat-container section .messages ul li.logged .message-header strong {
+    color: #fff;
+  }
+  
+  .chat-container section .messages ul li.logged .message-content {
+    color: #f5f5f5;
+  }
+  
+  .chat-container section .input-group {
+    display: flex;
+    flex-direction: row;
+    max-height: 60px;
+    height: 100%;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .chat-container section .input-group input {
+    height: 45px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    padding: 0 15px;
+    width: 100%;
+  }
+  
+  .chat-container section .input-group .send {
+    height: 45px;
+    width: 75px;
+    border-radius: 2px;
+    margin-left: 10px;
+    font-weight: 700;
+    border: none;
+    color: #fff;
+    background: #4caf50;
+    cursor: pointer;
+  }
+  
+  .chat-container section .input-group .send:hover {
+    background: #61be64;
+  }
